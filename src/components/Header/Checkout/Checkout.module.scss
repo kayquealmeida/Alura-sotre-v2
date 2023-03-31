@@ -1,0 +1,12 @@
+.checkout__image {
+  display: block;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .checkout__image {
+    margin-top: 0;
+    
+  }
+}

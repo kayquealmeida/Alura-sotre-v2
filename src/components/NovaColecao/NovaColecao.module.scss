@@ -1,0 +1,59 @@
+.novaColecao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  .novaColecao__textOrd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .textOrd__text {
+      font-size: 3em;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .novaColecao__textOrd {
+      flex-direction: row;
+      justify-content: flex-end;
+      
+      .textOrd__text {
+        margin: 0 auto;
+      }
+    }
+
+    .novaColecao__textOrd > :nth-child(2) {
+      justify-self: flex-end;
+      margin-right: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .novaColecao__textOrd {
+      .textOrd__text {
+        margin: 0 auto 0 35%;
+      }
+    }
+    
+    .novaColecao__textOrd > :nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  .productList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+  }
+}
